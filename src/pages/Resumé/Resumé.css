@@ -1,10 +1,10 @@
-.resume-page body {
+body {
     margin: 0;
     padding: 0;
     overflow-y: auto;
 }
 
-.resume-page .resume-container {
+.resume-container {
     text-align: left;
     padding: 80px 250px;
     background-color: black;
@@ -16,7 +16,7 @@
     color: white;
 }
 
-.resume-page .resume-content {
+.resume-content {
     width: 100%;
     max-width: 900px;
     padding: 50px 20px;
@@ -63,20 +63,20 @@
     margin-bottom: 10px;
 }
 
-.resume-page .description {
+.description {
     color: #666;
     font-size: 1rem;
     margin-bottom: 15px;
     transition: all 0.8s ease;
 }
 
-.resume-page .description:hover {
+.description:hover {
     border-radius: 5px;
     background-color: white;
     padding: 5px;
 }
 
-.resume-page .date {
+.date {
     font-size: 0.9rem;
     color: #000;
     background: rgba(255, 255, 255, 0.7);
