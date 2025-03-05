@@ -14,7 +14,7 @@ const Home = () => {
                     </div>
                 </ParallaxLayer>
 
-                <ParallaxLayer offset={0.3} speed={0.7}>
+                <ParallaxLayer offset={0.37} speed={0.7}>
                     <div className="parallax-layer-content">
                         <h1>test test test</h1>
                     </div>

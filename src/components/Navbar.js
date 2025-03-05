@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
 
-const Navbar = () => {
+const Navbar = ({ isDarkBackground }) => {
     const [hovered, setHovered] = useState(false);
 
     return (
-        <nav className="navbar">
+        <nav className={`navbar ${isDarkBackground ? 'dark-background' : 'light-background'}`}>
             <h1
                 onMouseEnter={() => setHovered(true)}
                 onMouseLeave={() => setHovered(false)}
