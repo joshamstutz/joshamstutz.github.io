@@ -24,15 +24,15 @@ const Contact = () => {
               <div className="social-links">
                 <div className="social-item">
                   <img src={githubLogo} alt="GitHub" className="social-logo" />
-                  <span className="username">joshamstutz</span>
+                  <a href="https://github.com/joshamstutz" target="_blank" rel="noopener noreferrer" className="username">joshamstutz</a>
                 </div>
                 <div className="social-item">
                   <img src={linkedinLogo} alt="LinkedIn" className="social-logo" />
-                  <span className="username">in/josh-amstutz</span>
+                  <a href="https://linkedin.com/in/josh-amstutz" target="_blank" rel="noopener noreferrer" className="username">in/josh-amstutz</a>
                 </div>
                 <div className="social-item">
                   <img src={emailLogo} alt="Email" className="social-logo" />
-                  <span className="username">josha.amstutz@gmail.com</span>
+                  <a href="mailto:josha.amstutz@gmail.com" className="username">josha.amstutz@gmail.com</a>
                 </div>
               </div>
             </div>
@@ -47,15 +47,15 @@ const Contact = () => {
               <div className="social-links">
                 <div className="social-item">
                   <img src={instaLogo} alt="Instagram" className="social-logo" />
-                  <span className="username">josh.amstutz</span>
+                  <a href="https://instagram.com/josh.amstutz" target="_blank" rel="noopener noreferrer" className="username">josh.amstutz</a>
                 </div>
                 <div className="social-item">
                   <img src={xLogo} alt="X" className="social-logo" />
-                  <span className="username">josh_amstutz</span>
+                  <a href="https://x.com/josh_amstutz" target="_blank" rel="noopener noreferrer" className="username">josh_amstutz</a>
                 </div>
                 <div className="social-item">
                   <img src={discordLogo} alt="Discord" className="social-logo" />
-                  <span className="username">joshamstutz</span>
+                  <a href="https://discord.com/users/joshamstutz" target="_blank" rel="noopener noreferrer" className="username">joshamstutz</a>
                 </div>
               </div>
             </div>
