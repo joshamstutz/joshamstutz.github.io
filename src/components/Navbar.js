@@ -19,6 +19,7 @@ const Navbar = ({ isDarkBackground }) => {
             </h1>
             <ul>
                 <li><Link to="/">home</Link></li>
+                <li><Link to="/resumé">resumé</Link></li>
                 <li><Link to="/projects">projects</Link></li>
                 <li><Link to="/contact">contact</Link></li>
             </ul>

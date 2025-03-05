@@ -12,24 +12,17 @@
   justify-content: center;
   transition: background-color 0.5s ease;
   position: relative;
-  padding-top: 120px;
+  margin-top: 92px;
+  padding-top: 30px;
 }
 
-.left-half {
-  background-color: #000000;
-  color: #ffffff;
-}
-
+.left-half,
 .right-half {
   background-color: #000000;
   color: #ffffff;
 }
 
-.left-half.hovered {
-  background-color: #ffffff;
-  color: #000000;
-}
-
+.left-half.hovered,
 .right-half.hovered {
   background-color: #ffffff;
   color: #000000;
@@ -100,4 +93,14 @@ p {
 .username:hover {
   opacity: 0.7;
   text-decoration: underline;
-} 
+}
+
+.visit-counter {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
