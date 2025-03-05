@@ -1,0 +1,95 @@
+.contact-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.contact-half {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  transition: background-color 0.5s ease;
+  position: relative;
+  padding-top: 120px;
+}
+
+.left-half {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.right-half {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.left-half.hovered {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.right-half.hovered {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.contentl {
+  text-align: left;
+  padding: 2rem;
+  z-index: 1;
+  width: 100%;
+  max-width: 400px;
+}
+
+.contentr {
+  text-align: right;
+  padding: 2rem;
+  z-index: 1;
+  width: 100%;
+  max-width: 400px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: normal;
+  margin: 0 0 2rem 0;
+}
+
+p {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.social-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contentr .social-item {
+  flex-direction: row-reverse;
+}
+
+.social-logo {
+  width: 24px;
+  height: 24px;
+  filter: invert(1);
+}
+
+.left-half.hovered .social-logo,
+.right-half.hovered .social-logo {
+  filter: invert(0);
+}
+
+.username {
+  font-size: 1.1rem;
+  font-weight: normal;
+} 
