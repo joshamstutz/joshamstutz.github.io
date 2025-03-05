@@ -1,0 +1,119 @@
+.resume-page body {
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+}
+
+.resume-page .resume-container {
+    text-align: left;
+    padding: 80px 250px;
+    background-color: black;
+    min-height: 100vh;
+    overflow-y: auto;
+    display: block;
+    max-width: 1000px;
+    margin: auto;
+    color: white;
+}
+
+.resume-page .resume-content {
+    width: 100%;
+    max-width: 900px;
+    padding: 50px 20px;
+    overflow-y: auto;
+}
+
+.resume-page h2 {
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin-bottom: 10px;
+    color: white;
+    margin-left: -20px;
+}
+
+.resume-page h3 {
+    font-size: 2rem;
+    font-weight: normal;
+    color: white;
+}
+
+.resume-page section {
+    margin-bottom: 50px;
+}
+
+.resume-page .experience-item,
+.resume-page .education-item {
+    margin-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+}
+
+.resume-page h4 {
+    font-weight: normal;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.resume-page .company,
+.resume-page .school {
+    font-size: 1rem;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.resume-page .description {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    transition: all 0.8s ease;
+}
+
+.resume-page .description:hover {
+    border-radius: 5px;
+    background-color: white;
+    padding: 5px;
+}
+
+.resume-page .date {
+    font-size: 0.9rem;
+    color: #000;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.resume-page .date:hover {
+    background-color: #6E5191;
+}
+
+.experience-item a,
+.education-item a {
+    text-decoration: underline;
+    color: black;
+    font-weight: normal;
+    transition: color 0.3s;
+}
+
+.resume-page .dot {
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #555;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: transparent;
+    cursor: pointer;
+}
+
+.resume-page .dot:hover {
+    background-color: #6E5191;
+}
