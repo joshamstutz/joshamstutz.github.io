@@ -1,5 +1,6 @@
 import React from "react";
 import "./Resumé.css";
+import resume from "../../assets/josh_amstutz_resume.pdf";
 
 const experienceData = [
     {
@@ -36,37 +37,40 @@ const educationData = [
 const Resumé = () => {
     return (
         <div className="resume-page">
-        <div className="resume-container">
-            <div className="resume-content">
-                <h2>Resumé</h2>
-                <section className="experience-section">
-                    <h3>Experience</h3>
-                    <div className="experience-list">
-                        {experienceData.map((job) => (
-                            <div key={job.id} className="experience-item">
-                                <h4>{job.title}</h4>
-                                <p className="company">{job.company}</p>
-                                <p className="description">{job.description}</p>
-                                <p className="date">{job.date}</p>
-                            </div>
-                        ))}
+            <div className="resume-container">
+                <div className="resume-content">
+                    <div className="resume-header">
+                        <h2>Resumé</h2>
+                        <a href={resume} className="download-link" download="josh_amstutz_resume.pdf">Download</a>
                     </div>
-                </section>
+                    <section className="experience-section">
+                        <h3>Experience</h3>
+                        <div className="experience-list">
+                            {experienceData.map((job) => (
+                                <div key={job.id} className="experience-item">
+                                    <h4>{job.title}</h4>
+                                    <p className="company">{job.company}</p>
+                                    <p className="description">{job.description}</p>
+                                    <p className="date">{job.date}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </section>
 
-                <section className="education-section">
-                    <h3>Education</h3>
-                    <div className="education-list">
-                        {educationData.map((edu) => (
-                            <div key={edu.id} className="education-item">
-                                <h4>{edu.degree}</h4>
-                                <p className="school">{edu.school}</p>
-                                <p className="date">{edu.date}</p>
-                            </div>
-                        ))}
-                    </div>
-                </section>
+                    <section className="education-section">
+                        <h3>Education</h3>
+                        <div className="education-list">
+                            {educationData.map((edu) => (
+                                <div key={edu.id} className="education-item">
+                                    <h4>{edu.degree}</h4>
+                                    <p className="school">{edu.school}</p>
+                                    <p className="date">{edu.date}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </section>
+                </div>
             </div>
-        </div>
         </div>
     );
 };

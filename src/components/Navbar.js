@@ -22,6 +22,7 @@ const Navbar = ({ isDarkBackground }) => {
                 <li><Link to="/resumé">resumé</Link></li>
                 <li><Link to="/projects">projects</Link></li>
                 <li><Link to="/contact">contact</Link></li>
+                <li><Link to="/life">life</Link></li>
             </ul>
         </nav>
     );

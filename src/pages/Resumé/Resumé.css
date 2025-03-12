@@ -4,6 +4,19 @@ body {
     overflow-y: auto;
 }
 
+.resume-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.download-link {
+    text-decoration: underline;
+    color: lightblue;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
 .resume-container {
     text-align: left;
     padding: 80px 250px;
@@ -87,7 +100,7 @@ body {
 }
 
 .resume-page .date:hover {
-    background-color: #6E5191;
+    background-color: white;
 }
 
 .experience-item a,

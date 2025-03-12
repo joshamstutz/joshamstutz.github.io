@@ -36,7 +36,21 @@ p {
     border-radius: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
-    position: relative; /* Needed for dot positioning */
+    position: relative;
+    max-width: 250px;
+    min-width: 250px;
+    max-height: 170px;
+    min-height: 170px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card a {
+    text-decoration: underline;
+    color: black;
+    font-weight: normal;
+    transition: color 0.3s;
+    margin-top: auto;
 }
 
 .project-card:hover {
@@ -78,7 +92,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: transparent; /* Hide the text initially */
+    color: transparent;
     font-size: 0.75rem;
     font-weight: bold;
 }
@@ -100,7 +114,6 @@ p {
     background-color: #D61F1F;
 }
 
-/* Hover effect for dots */
 .dot:hover {
     width: 100px;
     height: 15px;

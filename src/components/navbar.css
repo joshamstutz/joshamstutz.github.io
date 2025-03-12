@@ -10,27 +10,16 @@
     z-index: 1000;
     transition: color 0.3s ease;
     border-bottom: 1px solid rgba(128, 128, 128, 0.2);
-    color: #ffffff;
 }
 
 .navbar.dark-background {
-    color: #000000;
+    background-color: #fff;
+    color: #000;
 }
 
 .navbar.light-background {
-    color: #ffffff;
-}
-
-.navbar.dark-background h1{
-    color: #000000;
-}
-
-.navbar.light-background h1{
-    color: #ffffff;
-}
-
-.navbar * {
-    pointer-events: auto;
+    background-color: #000;
+    color: #fff;
 }
 
 .navbar ul {
@@ -39,10 +28,6 @@
     margin: 0;
     padding: 0;
     gap: 2rem;
-}
-
-.navbar ul li {
-    display: inline;
 }
 
 .navbar a {
@@ -63,7 +48,6 @@
     font-weight: normal;
     gap: 5px;
     transition: gap 0.5s ease;
-    color: inherit;
 }
 
 .navbar h1:hover {
@@ -76,24 +60,23 @@
 
 .navbar .last-name {
     opacity: 1;
-    transform: translateX(0px);
+    transform: translateX(0);
     transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 .navbar h1:hover .last-name {
     opacity: 0;
-    transform: translateX(750px);
-    transition: opacity 0.5s ease, transform 1s ease;
+    transform: translateX(500px);
+    transition: opacity 0.5s ease, transform 0.7s ease;
 }
 
 .navbar .middle-name {
     opacity: 0;
-    transform: translateX(-20px);
-    transition: opacity 1.5s ease, transform 0.5s ease;
+    transform: translateX(-120px);
+    transition: opacity 1s ease, transform 0.5s ease;
 }
 
 .navbar h1:hover .middle-name {
-    transition-delay: 0.5s;
     opacity: 1;
     transform: translateX(-5px);
 }

@@ -9,8 +9,8 @@ const ItemType = "PROJECT";
 const projectsData = [
     { id: "1", title: "TeeTour", description: "an iOS app that automatically plans golf trips based on the courses you want to visit.", link: "https://github.com/joshamstutz/TeeTour", status: "yellow", date: "aug 2024 -" },
     { id: "2", title: "financeBRO", description: "a python tool to help automate finances for student organizations.", link: "https://github.com/joshamstutz/financeBRO", status: "yellow", date: "jan 2025 -" },
-    { id: "3", title: "HammerMaps", description: "an iOS app that emulates a real-life minecraft map of a college campus.", link: "https://github.com/joshamstutz/HammerMaps", status: "yellow", date: "feb 2025 -" },
-    { id: "4", title: "_________", description: "this website test test test test.", link: "https://github.com/joshamstutz/site", status: "yellow", date: "mar 2025 -" }
+    { id: "3", title: "HammerMaps", description: "an iOS app that emulates a real-Life minecraft map of a college campus.", link: "https://github.com/joshamstutz/HammerMaps", status: "yellow", date: "feb 2025 -" },
+    { id: "4", title: "my site", description: "this website...", link: "https://github.com/joshamstutz/site", status: "yellow", date: "mar 2025 -" }
 ];
 
 const ProjectCard = ({ project, index, moveCard }) => {
