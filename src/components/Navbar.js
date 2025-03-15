@@ -18,7 +18,7 @@ const Navbar = ({ isDarkBackground }) => {
                 <span className="last-name">amstutz</span>
             </h1>
             <ul>
-                <li><Link to="/site/">home</Link></li>
+                <li><Link to="">home</Link></li>
                 <li><Link to="/resumé">resumé</Link></li>
                 <li><Link to="/projects">projects</Link></li>
                 <li><Link to="/contact">contact</Link></li>
