@@ -48,7 +48,7 @@ const Home = () => {
                             transition: "opacity 0.2s ease-out"
                         }}
                     >
-                        <img src={upArrow} alt="Scrolling Image" className="scrolling-image" />
+                        <img src={upArrow} alt="up arrow" className="scrolling-image" />
                     </div>
                 </ParallaxLayer>
 
