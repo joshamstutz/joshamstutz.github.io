@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './Contact.css';
 import githubLogo from '../../assets/contact/ghub.png';
 import linkedinLogo from '../../assets/contact/linkedin.png';
@@ -10,15 +10,6 @@ import xLogo from '../../assets/contact/x.png';
 const Contact = () => {
   const [leftHovered, setLeftHovered] = useState(false);
   const [rightHovered, setRightHovered] = useState(false);
-  const [visitCount, setVisitCount] = useState(() => {
-    return parseInt(localStorage.getItem('visitCount')) || 0;
-  });
-
-  useEffect(() => {
-    const newCount = visitCount + 1;
-    setVisitCount(newCount);
-    localStorage.setItem('visitCount', newCount);
-  }, []);
 
   return (
       <>
@@ -74,9 +65,6 @@ const Contact = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="visit-counter">
-          visits: {visitCount}
         </div>
       </>
   );
