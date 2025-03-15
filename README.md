@@ -1,2 +1,2 @@
 # **my website**
-made to test myself/have fun
+made to test myself/have fun/showcase things about me
