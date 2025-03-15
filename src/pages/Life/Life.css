@@ -1,9 +1,132 @@
+/* Container and layout */
 .life-container {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
+}
+
+/* Gallery grid */
+.life-gallery-grid {
+    padding: 200px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+@media (min-width: 640px) {
+    .life-gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .life-gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Image container styles */
+.life-image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.life-image-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Image styles */
+.life-gallery-image {
+    width: 100%;
+    height: 16rem;
+    object-fit: cover;
+    display: block;
+}
+
+/* Caption overlay */
+.life-caption-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    padding: 1rem;
+}
+
+.life-caption-text {
     color: white;
+    font-weight: 500;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 0.25rem;
+    border-radius: 1rem;
+    display: inline-block;
+}
+
+/* Modal styles */
+.life-modal-overlay {
+    position: fixed;
+    top: 10%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+    padding: 1rem;
+}
+
+.life-modal-container {
+    position: relative;
+    max-width: 64rem;
+    width: 100%;
+}
+
+.life-modal-close-button {
+    position: absolute;
+    top: 2rem;
+    right: 10rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 60;
+    border: none;
+}
+
+.life-modal-close-button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.life-modal-close-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    stroke: white;
+}
+
+.life-modal-content {
+    background-color: transparent;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.life-modal-image {
+    width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+}
+
+/* Utility to hide elements */
+.life-hidden {
+    display: none;
 }
