@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './Contact.css';
-import githubLogo from '../../assets/ghub.png';
-import linkedinLogo from '../../assets/linkedin.png';
-import emailLogo from '../../assets/email.png';
-import instaLogo from '../../assets/insta.png';
-import discordLogo from '../../assets/discord.png';
-import xLogo from '../../assets/x.png';
+import githubLogo from '../../assets/contact/ghub.png';
+import linkedinLogo from '../../assets/contact/linkedin.png';
+import emailLogo from '../../assets/contact/email.png';
+import instaLogo from '../../assets/contact/insta.png';
+import discordLogo from '../../assets/contact/discord.png';
+import xLogo from '../../assets/contact/x.png';
 
 const Contact = () => {
   const [leftHovered, setLeftHovered] = useState(false);

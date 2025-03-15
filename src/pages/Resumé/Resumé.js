@@ -14,7 +14,7 @@ const experienceData = [
         id: "2",
         title: "Organizer/Finance Lead",
         company: "Purdue Hackers",
-        description: "Leading the finance team, handling budgeting, tracking expenses, and ensuring financial transparency for the club's operations and events. Currently developing financeBRO (see projects tab) and launching microgrants soon, a program designed to get student developers the funding they need.",
+        description: "Leading the finance team, handling budgeting, tracking expenses, and ensuring financial transparency for the club's operations and events. Developed financeBRO (see projects tab) and launching microgrants soon, a program designed to get student developers the funding they need.",
         date: "Sept 2024 - Present"
     }
 ];
