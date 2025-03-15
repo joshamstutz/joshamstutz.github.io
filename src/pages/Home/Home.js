@@ -3,6 +3,7 @@ import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import "./Home.css";
 import upArrow from "../../assets/uparrow.png";
 import phoebeImage from "../../assets/phoebe.jpg";
+import mount from "../../assets/mountain.jpg";
 
 const Home = () => {
     const parallaxRef = useRef(null);
@@ -30,7 +31,13 @@ const Home = () => {
             <Parallax pages={7} className="parallax" ref={parallaxRef}>
 
                 <ParallaxLayer sticky={{ start: 0.2, end: 0.2 }}>
-                    <div className="text-item" style={{ top: "20%" }}>welcome</div>
+                    <div className="text-item" style={{ top: "20%", color: "black"  }}>welcome</div>
+                    <img
+                        src={mount}
+                        alt="bg"
+                        className="welcome-image"
+                        style={{ display: "block", margin: "0px auto", maxWidth: "1000px", borderRadius: "30px" }}
+                    />
                 </ParallaxLayer>
 
                 <ParallaxLayer sticky={{ start: 0.9, end: 1 }}>
