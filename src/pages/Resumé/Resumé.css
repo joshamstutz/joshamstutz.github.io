@@ -76,6 +76,10 @@ body {
     margin-bottom: 10px;
 }
 
+.school {
+    text-decoration: underline;
+}
+
 .description {
     color: #666;
     font-size: 1rem;
@@ -160,5 +164,12 @@ body {
 
     .date {
         font-size: 0.8rem;
+        margin: 30px auto;
+    }
+
+    .school {
+        font-size: 0.5rem;
+        margin: 50px auto;
+        text-decoration: underline;
     }
 }
