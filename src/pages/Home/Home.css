@@ -1,3 +1,4 @@
+/* Base styles */
 html, body {
     margin: 0;
     overflow: hidden;
@@ -6,30 +7,38 @@ html, body {
     background-color: black;
 }
 
-.image-title {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 2rem;
-    color: black;
-    font-weight: normal;
-    z-index: 15;
-}
-
-.parallax-layer-content {
-    position: relative;
-    height: 100vh;
-    text-align: center;
-    color: white;
-    font-size: medium;
-    z-index: 2;
-}
-
+/* Parallax container */
 .parallax {
     overflow: auto;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
 }
 
+/* Text styling */
+.text-item {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    z-index: 3;
+    width: 90%; /* Prevent text from overflowing on small screens */
+    max-width: 600px;
+}
+
+.text-item-small {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    color: gray;
+    text-align: center;
+    z-index: 3;
+    width: 90%; /* Prevent text from overflowing on small screens */
+    max-width: 600px;
+}
+
+/* Image containers */
 .up-image-container {
     position: absolute;
     left: 50%;
@@ -51,6 +60,35 @@ html, body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.welcome-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 70%;
+    width: auto;
+    height: auto;
+    border-radius: 30px;
+}
+
+.image-title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    color: black;
+    font-weight: normal;
+    z-index: 15;
+}
+
+.parallax-layer-content {
+    position: relative;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    font-size: medium;
+    z-index: 2;
 }
 
 .parallax-layer-content h1 {
@@ -83,22 +121,51 @@ html, body {
     z-index: 1;
 }
 
-.text-item {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 24px;
-    color: white;
+/* Copyright section */
+.copyright {
     text-align: center;
-    z-index: 3;
+    font-size: 12px;
+    padding: 10px;
+    color: white;
 }
 
-.text-item-small {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 20px;
-    color: gray;
-    text-align: center;
-    z-index: 3;
+@media screen and (max-width: 768px) {
+    .text-item {
+        font-size: 20px;
+    }
+
+    .text-item-small {
+        font-size: 16px;
+    }
+
+    .welcome-image {
+        display: block;
+        margin: 30px auto;
+        max-width: 90%;
+        width: auto;
+        height: auto;
+        border-radius: 30px;
+    }
+
+    .welcome-title {
+        color: white;
+    }
+
+    .scrolling-image {
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .text-item {
+        font-size: 18px;
+    }
+
+    .welcome-title {
+        color: white;
+    }
+
+    .text-item-small {
+        font-size: 14px;
+    }
 }

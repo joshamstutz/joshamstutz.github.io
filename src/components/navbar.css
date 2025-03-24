@@ -80,3 +80,24 @@
     opacity: 1;
     transform: translateX(-5px);
 }
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem;
+    }
+
+    .navbar ul {
+        gap: 0.75rem;
+        justify-content: center;
+    }
+
+    .navbar a {
+        font-size: 12px;
+        padding: 3px 6px;
+    }
+
+    .navbar h1 {
+        font-size: 18px;
+        white-space: nowrap;
+    }
+}
