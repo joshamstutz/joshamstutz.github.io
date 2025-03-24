@@ -9,9 +9,10 @@ const ItemType = "PROJECT";
 const projectsData = [
     { id: "1", title: "financeBRO", description: "a python tool to help automate finances for student organizations.", link: "https://github.com/joshamstutz/financeBRO", status: "green", date: "jan - mar 2025" },
     { id: "2", title: "br-ckt", description: "a march madness bracket generator based on past matchup results", link: "https://br-ckt.github.io", status: "green", date: "feb - mar 2025" },
-    { id: "3", title: "TeeTour", description: "an iOS app that plans golf trips based on the courses you want to visit.", link: "https://github.com/joshamstutz/TeeTour", status: "yellow", date: "aug 2024 -" },
-    { id: "4", title: "HammerMaps", description: "an iOS app that emulates a real-Life minecraft map of a college campus.", link: "https://github.com/joshamstutz/HammerMaps", status: "yellow", date: "feb 2025 -" },
-    { id: "5", title: "my site", description: "this website...", link: "https://github.com/joshamstutz/site", status: "yellow", date: "mar 2025 -" }
+    { id: "3", title: "dawg", description: "a web app that tracks the underdog betting strategy for march madness games", link: "https://github.com/joshamstutz/dawg", status: "green", date: "mar - mar 2025" },
+    { id: "4", title: "TeeTour", description: "an iOS app that plans golf trips based on the courses you want to visit.", link: "https://github.com/joshamstutz/TeeTour", status: "yellow", date: "aug 2024 -" },
+    { id: "5", title: "HammerMaps", description: "an iOS app that emulates a real-Life minecraft map of a college campus.", link: "https://github.com/joshamstutz/HammerMaps", status: "yellow", date: "feb 2025 -" },
+    { id: "6", title: "my site", description: "this website...", link: "https://github.com/joshamstutz/site", status: "yellow", date: "mar 2025 -" }
 ];
 
 const ProjectCard = ({ project, index, moveCard }) => {
