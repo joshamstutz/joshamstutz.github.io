@@ -80,7 +80,6 @@ p {
     color: #6E5191;
 }
 
-/* Dot styling */
 .dot {
     position: absolute;
     top: 10px;
@@ -156,11 +155,11 @@ p {
 
 @media (max-width: 768px) {
     .projects-container {
-        padding: 50px 20px; /* Reduce padding for smaller screens */
+        padding: 50px 20px;
     }
 
     h2 {
-        font-size: 2rem; /* Slightly smaller heading */
+        font-size: 2rem;
     }
 
     p {
@@ -168,8 +167,8 @@ p {
     }
 
     .projects-grid {
-        grid-template-columns: 1fr; /* Single-column layout */
-        gap: 25px; /* Reduce gap between project cards */
+        grid-template-columns: 1fr;
+        gap: 25px;
         padding: 25px;
     }
 
@@ -178,10 +177,11 @@ p {
         min-width: 80%;
         min-height: auto;
         padding: 20px;
+        position: relative;
     }
 
     .project-card h3 {
-        font-size: 1.3rem; /* Slightly smaller titles */
+        font-size: 1.3rem;
     }
 
     .project-card p {
@@ -200,7 +200,14 @@ p {
     }
 
     .date {
-        font-size: 0.8rem;
-        padding: 3px 8px;
+        position: absolute;
+        top: 33px;
+        right: 10px;
+        font-size: 0.9rem;
+        color: #666;
+        background: rgba(255, 255, 255, 0.7);
+        padding: 5px 10px;
+        border-radius: 10px;
+        display: inline-block;
     }
 }
