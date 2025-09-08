@@ -5,17 +5,31 @@ import resume from "../../assets/josh_amstutz_resume.pdf";
 const experienceData = [
     {
         id: "1",
-        title: "artificial intelligence intern",
-        company: "Data Annotation",
-        description: "Worked with AI teams to train models by feeding them coding prompts and writing target responses. Assisted with refining the model's ability to generate accurate code.",
-        date: "Dec 2023 - Sep 2024"
+        title: "corporate partner project team member",
+        company: "Molson Coors – The Data Mine, Purdue University",
+        description: "Collaborating with a 10-member student team to analyze the alcohol market between Molson Coors and its distributors. Building a predictive model to forecast market dynamics over the next 10 years and presenting findings to company stakeholders.",
+        date: "Aug 2025 – Present"
     },
     {
         id: "2",
+        title: "information services intern",
+        company: "Parkview Health – Information Services",
+        description: "Supporting enterprise IT operations, including troubleshooting technical issues and resolving service tickets. Assisting with infrastructure and networking projects while gaining experience in large-scale healthcare IT systems.",
+        date: "May 2025 – Present"
+    },
+    {
+        id: "3",
         title: "organizer/finance lead",
         company: "Purdue Hackers",
-        description: "Leading the finance team, handling budgeting, tracking expenses, and ensuring financial transparency for the club's operations and events. Developed financeBRO (see projects tab) and launching microgrants soon, a program designed to get student developers the funding they need.",
-        date: "Sept 2024 - present"
+        description: "Overseeing finances for Purdue’s largest computer science club. Developed financeBRO, a Python-based expense tracking tool, and leading Microgrants, a program that provides student developers with project funding.",
+        date: "Jan 2025 – Present"
+    },
+    {
+        id: "4",
+        title: "artificial intelligence intern",
+        company: "Data Annotation",
+        description: "Trained machine learning models by designing coding prompts and writing target responses. Evaluated AI-generated code for accuracy and quality against programming standards to improve performance.",
+        date: "Dec 2023 – Sep 2024"
     }
 ];
 
