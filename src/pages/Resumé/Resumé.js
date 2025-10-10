@@ -22,7 +22,7 @@ const experienceData = [
         title: "organizer/finance lead",
         company: "Purdue Hackers",
         description: "Overseeing finances for Purdue’s largest computer science club. Developed financeBRO, a Python-based expense tracking tool, and leading Microgrants, a program that provides student developers with project funding.",
-        date: "Jan 2025 – Present"
+        date: "Jan 2025 – Oct 2025"
     },
     {
         id: "4",
